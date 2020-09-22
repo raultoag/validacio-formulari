@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="js/functions.js"></script>
+</head>
+<body id="body">
+    <nav id="container" class="navbar sticky-top justify-content-between">
+        <div  class="row h-20 w-100 ">
+            <div class="col-3 col-md-1 p-2 ml-3">
+                <img src="img/logo.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="col-6 col-md text-center">
+                <h2 class="mt-3">Libreria</h2>
+            </div>
+            <div class="col-md-1 col divUser mr-3 text-center">
+                <i class="fas fa-user fa-2x mt-3 cursor" data-toggle="modal" data-target="#modalLogin"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby=modalLoginlLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header ">
+                <span><a href="registro.html">Registrarse</a></span>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 text-center">
+                        <i class="fas fa-user fa-5x"></i>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <form name="formLogin" class="w-100">
+                        <div class="form-group row w-100 ">
+                            <label for="useriLog" class="col-3 col-form-label">Usuario</label>
+                            <div class="col ">
+                                <input type="text" class="form-control col" id="useriLog" placeholder="Usuario">
+                            </div>
+                            
+                        </div>
+                        <div class="form-group row w-100 mt-2">
+                            <label for="passLogin" class="col-3 col-form-label">Contraseña</label>
+                            <div class="col ">
+                                <input type="password" class="form-control col" id="passLogin" placeholder="Contraseña">
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer text-center">
+              <button type="button" class="btn btnRecPass">Recuperar contraseña</button>
+              <button type="button" class="btn btnLog">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    <div class="bodyContent mt-3" id="divLibreria">
+        <div class="row my-3 w-100 divFilter">
+            <div class="col-md-7 col-xl-8 divSelect">
+                <select name="categorias" class="selectCat" >
+                    <option value="-1">-- Escoje categoria --</option>
+                    <option value="ficcion">Fantasía</option>
+                    <option value="novelaNegra">Novela negra</option>
+                    <option value="historia">Histórico</option>
+                </select>
+            </div>
+            <div class="input-group col-md-5 col-xl-4 divInputSearch">
+                <input type="text"  placeholder="Buscar" class="inputSearch">
+                <div class="input-group-append">
+                        <span class="input-group-text cursor" id="inputGroupPrepend" ><i class="fas fa-search " ></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2 divLibros">
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro1.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro2.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro3.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro4.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro1.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro2.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro3.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro4.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro1.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro2.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro3.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="text-center">
+                    <a href="libro.html"><img src="img/libro4.jpg" alt="imgLibro" class="img-fluid cursor"></a>
+                </div>
+                <div class="divTextImg">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem inventore repellat dolores repellendus debitis cumque quibusdam molestiae pariatur nostrum eaque dignissimos, placeat atque rerum officiis optio quam qui! Ratione, iusto?
+                </div>
+            </div>
+        </div>
+      </div>
+      <footer class="h-20 w-100 colorFooter mt-5">
+        <div class="row">
+            <div class="col text-center"><p>lorem impsum</p></div>
+            <div class="col text-center"><p>Quienes somos</p></div>
+            <div class="col text-center">
+                <p>Contacta</p>
+                <p class="textSize">Telf: 933216548</p>
+                <p class="textSize">Email: libreria@gmail.com</p>
+            </div>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

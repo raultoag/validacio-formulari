@@ -1,0 +1,121 @@
+#container {
+    display: flex;                 
+    flex-direction: row;            
+    flex-wrap: nowrap;              
+    background-color: #c9dddd;
+  }
+.navbar{
+    padding: 0%;
+}
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    padding: 0%;
+    margin: 0%;
+}
+.row{
+    margin: 0%;
+}
+
+.divTitle{
+    margin:0 auto;
+}
+.btnLog, .colorFooter{
+    background-color: #c9dddd;
+}
+.btnRecPass{
+    background-color: #bbeebb;
+}
+.btnColor{
+    background-color: #f6e8e8;
+}
+.cursor{
+	cursor:pointer;
+}
+
+.divLibros{
+    clear: both;
+    text-align: justify;
+}
+.divInfoLib{
+    justify-content: justify;
+    text-align: justify;
+}
+.textSize{
+    font-size: 0.7rem;
+}
+.divTextImg{
+    text-align: justify;
+    margin-bottom: 5%;
+}
+input[type=text], input[type=number], input[type=email], input[type=password]{
+    -webkit-appearance: none;
+    appearance: none;
+  
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+  
+    font-family: inherit;
+    font-size: 90%;
+  
+    box-sizing: border-box;
+  }
+/* Este es nuestro diseño para los campos no válidos */
+input:invalid{
+    border-color: rgb(0, 0, 0);
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+@media (max-width: 575px){
+
+}
+@media (min-width: 576px) and (max-width: 767px){
+	
+}
+@media (max-width: 767px){
+    .divFilter{
+        display: flex;
+    }
+    .divSelect{
+        order: 2;
+    }
+    .divInputSearch{
+        order: 1;
+        margin-bottom: 5%;
+    }
+    .divSelect .selectCat{
+        width: 100%!important;
+    }
+    .divInputSearch .inputSearch{
+        width: 85%!important;
+    }
+}
+@media (min-width: 768px){
+    .divInputSearch{
+        justify-content: flex-end;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.bodyContent{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media (min-width: 992px){
+    .bodyContent{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	
+}
+@media (min-width: 1200px){
+
+
+}
